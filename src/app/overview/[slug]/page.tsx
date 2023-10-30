@@ -114,15 +114,15 @@ export default function Product({params}) {
 
 
     return (
-        <main className="bg-white ">
+        <main className="bg-white w-full">
             <Navbar />
             <div className="flex flex-col items-center justify-center">
 
-                <div className="w-[800px] pt-1 pb-5 pl-9 pr-3 text-blue-700 mt-3 flex-col justify-center items-center">
+                <div className="pt-1 pb-5 pl-9 pr-3 text-blue-700 mt-3 flex-col justify-center items-center">
                     <h1 className="mt-5 text-3xl text-center"> {data['Name']} ({data['Symbol']})</h1>
                     <h1 className="mt-1 text-sm text-center"> {data['Industry']} </h1>
                 </div>
-                <div className="flex flex-col items-center justify-center w-[800px] border-2 pl-3 pr-3 pb-3 pt-2 rounded-lg"> 
+                <div className=" w-[52vw] flex flex-col items-center justify-center border-2 pl-3 pr-3 pb-3 pt-2 rounded-lg"> 
                     <canvas id="id_chart"></canvas>
                     <div className="flex flex-row bg-sky-50 border-2 p-3 mt-2 rounded-3xl">
                         {
@@ -137,7 +137,7 @@ export default function Product({params}) {
                         }
                     </div>
                 </div>
-                <div className="w-[800px] flex flex-col items-center justify-center border-2 rounded-lg pl-5 pr-5 pb-3 mt-2 pt-2 mb-5">
+                <div className="w-[52vw] flex flex-col items-center justify-center border-2 rounded-lg pl-5 pr-5 pb-3 mt-2 pt-2 mb-5">
                     <p className="text-stone-950 text-lg pt-1 mb-1 font-medium border-b-2" >Know about us</p>
                     <div className="flex text-stone-950 pt-1 mb-1">
                         <p>Beta: {data['Beta']}&emsp; | &emsp; </p>

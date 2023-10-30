@@ -36,23 +36,23 @@ export default function Home() {
 
   return (
     <>
-    <main className='bg-[#e7f3ed]'>
+    <main className='bg-[#e7f3ed] w-full'>
     <Navbar/>
 
-    <div className="justify-center align-center mb-7 mt-2">
+    <div className="justify-center align-center mb-7 mt-2 w-full">
       
       <div className="font-medium text-center text-black">
           <ul className="flex flex-wrap -mb-px items-center justify-center">
-              <li className="mr-2 cursor-pointer" onClick={()=> handleTabSelection('gainer')}>
-                  <span className={`${selectedTab=='gainer' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2 rounded-t-lg mr-12 text-xl`} aria-current="page">Top Gainers</span>
+              <li className="cursor-pointer" onClick={()=> handleTabSelection('gainer')}>
+                  <span className={`${selectedTab=='gainer' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2 rounded-t-lg mr-6 text-xl`} aria-current="page">Top Gainers</span>
               </li>
               <li className="mr-2 cursor-pointer" onClick={()=> handleTabSelection('loser')}>
-                  <span className={`${selectedTab=='loser' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2  rounded-t-lg text-xl`} >Top Losers</span>
+                  <span className={`${selectedTab=='loser' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2 ml-6 rounded-t-lg text-xl`} >Top Losers</span>
               </li>
           </ul>
       </div>
     </div>
-    <div className='flex flex-row w-[98vw] m-auto mt-[20px] justify-center align-center flex-wrap'>
+    <div className='flex flex-row w-full justify-center align-center flex-wrap'>
     { 
       data[selectedTab=== "gainer"?'top_gainers': 'top_losers']?.map((item: cardType)=>{ 
         return <Cards {...item}/>
