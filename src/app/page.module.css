@@ -1,0 +1,13 @@
+.tabActive{
+    border-bottom: 2px solid;
+    border-color: blue;
+    color: blue;
+    font-weight: 500;
+}
+
+.tab{
+    border-bottom: 2px solid transparent;
+    border-color: grey;
+    color: grey;
+    font-weight: 500;
+}
