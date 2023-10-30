@@ -44,10 +44,10 @@ export default function Home() {
       <div className="font-medium text-center text-black">
           <ul className="flex flex-wrap -mb-px items-center justify-center">
               <li className="mr-2 cursor-pointer" onClick={()=> handleTabSelection('gainer')}>
-                  <span className={`${selectedTab=='gainer' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2 rounded-t-lg mr-12`} aria-current="page">Top Gainers</span>
+                  <span className={`${selectedTab=='gainer' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2 rounded-t-lg mr-12 text-xl`} aria-current="page">Top Gainers</span>
               </li>
               <li className="mr-2 cursor-pointer" onClick={()=> handleTabSelection('loser')}>
-                  <span className={`${selectedTab=='loser' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2  rounded-t-lg`} >Top Losers</span>
+                  <span className={`${selectedTab=='loser' ? Styles.tabActive : Styles.tab} inline-block p-3 pb-2  rounded-t-lg text-xl`} >Top Losers</span>
               </li>
           </ul>
       </div>
