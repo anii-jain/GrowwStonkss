@@ -10,7 +10,7 @@ export default function Cards(props: { ticker: any; price: any; change_amount: a
       } = props;
     return (
         <Link href={`/overview/${ticker}`}>
-        <div className="min-w-fit p-6 bg-[#FAF9F6] mr-5 ml-5 mb-10 w-[18vw] rounded-xl border-stone-800 shadow-lg text-stone-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+        <div className="min-w-fit p-6 bg-[#f6f5f489] mr-5 ml-5 mb-10 w-[15vw] rounded-xl border border-stone-300 shadow-lg text-stone-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <div className="flex flex-wrap items-center justify-between">
                 <img className="rounded-full w-14 h-14 mb-2" src="https://storage.googleapis.com/5paisa-prod-storage/files/2022-09/Trending%20Company_8.jpg" alt="image description"/>
                     <h5 className="text-xl font-semibold tracking-wide">{ticker}</h5>

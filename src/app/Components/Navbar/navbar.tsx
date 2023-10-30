@@ -39,13 +39,13 @@ export default function Navbar(){
       </div>
       <input type="text" id="search-navbar" className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  position-relative focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." onChange={handleSearch} />
       <div>
-      <div id="dropdown-search-city " className={`z-10 ${suggestions.length ? '' : 'hidden'} bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 position-absolute`}>
+      <div id="dropdown-search-city " className={`z-10 ${suggestions.length ? '' : 'hidden'} bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700 position-absolute lg:absolute mt-1 `}>
             <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button-2">
               {suggestions.map((items)=>{
                 return (
                   <li>
                     <button type="button" className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                        <div className="inline-flex items-center">          
+                        <div className="inline-flex items-center text-left">          
                             {items['2. name']}({items['1. symbol']})
                         </div>
                     </button>
