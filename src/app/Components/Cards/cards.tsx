@@ -9,7 +9,6 @@ export default function Cards(props: { ticker: any; price: any; change_amount: a
         volume
       } = props;
     return (
-        
         <Link href={`/overview/${ticker}`}>
         <div className="min-w-fit p-6 bg-[#FAF9F6] mr-5 ml-5 mb-10 w-[18vw] rounded-xl border-stone-800 shadow-lg text-stone-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <div className="flex flex-wrap items-center justify-between">
